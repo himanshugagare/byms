@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+.header{
+    height: 100vh;
+    /* width: 100vw; */
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/bg.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+    /* background: #9D50BB;  fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #6E48AA, #9D50BB); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+ .nav-item::after {
+     content: '';
+     display: block;
+     width: 0px;
+     margin: auto;
+     height: 2px;
+     background: #fec400;
+     transition: 0.4s;
+
+ }
+
+ .nav-item:hover::after {
+     width: 100%;
+     margin: auto;
+ }
+
+ nav ul li {
+    margin-right: 1.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+ }
+
+ nav ul li a{
+     font-size: 1rem;
+     text-transform: uppercase;
+     color: #FFE699 !important;
+     text-decoration: none !important;
+ }
+
+ nav ul li a:hover {
+     color: #fec400 !important;
+ }
+
+ .nav-link {
+     padding: 15px 0px;
+     transition: 0.2s
+ }
+
+ .navbar-brand{
+     letter-spacing: 0.5rem;
+     font-weight: bolder;
+     font-size: 2rem;
+     /* color:  !important; */
+ }
+
+ .shift{
+     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+     height: 50px;
+ }
+
+ .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 230, 153, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 230, 153, 1);
+}
+
+.leftimg{
+    width: 620px;
+    margin-top: 29%;
+    margin-left: -18%;
+}
+
+.hed{
+    color: #F7FD04;
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    animation: headcolor 2s infinite;
+    text-shadow: 1px 2px 4px #F7FD04;
+}
+
+@keyframes headcolor {
+    0%{color:#F7FD04;}
+	20%{color:#F9B208;}
+	30%{color:#F98404;}
+	40%{color:#FC5404;}
+    60%{color:#F98404;}
+	80%{color:#F9B208;} 
+    100%{color:#F7FD04;}
+}
+
+.hh1{
+    margin-top: 25%;
+    color: #F7FD04;
+    font-weight: bolder;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    text-shadow: 4px 5px 6px #FC5404;
+}
+
+.hp1{
+    text-align: justify;
+    margin-top: 10%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #F7FD04;
+}
+
+.hps1{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #F7FD04;
+}
+
+.butn{
+    margin-top: 10%;
+}
+
+.butn button{
+    width: 40%;
+    box-shadow: 2px 2px 5px #FFE699;
+    margin-right: 8%;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.butn button i{
+    font-size: 1.5rem;
+}
+
+.butn button:hover{
+    box-shadow: 3px 3px 6px #FFE699;
+}
+
+
+@media (max-width: 480px){
+    .leftimg{
+        display: none;
+    }
+
+    .navbar-brand{
+        font-size: 1.5rem;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 230, 153, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        /* margin-bottom: 5px; */
+        border: none !important;
+    }
+
+    nav ul{
+        margin-top: -4px;
+    }
+
+    nav ul li{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) !important;
+        height: 50px;
+        width: 160px;
+        margin-left: 56%;
+    }
+
+    .hh1{
+        margin-top: 35%;
+        font-size: 2rem;
+    }
+
+    .hp1{
+        margin-top: 18%;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .hps1{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .butn{
+        margin-top: 15%;
+        margin-left: 4%;
+    }
+
+    .butn button{
+        width: 45%;
+        margin-right: 2%;
+        font-size: 1rem;
+    }
+
+    .butn button i{
+        font-size: 1.3rem;
+    }
+}
